@@ -1,0 +1,24 @@
+body{
+    background-color: aquamarine;
+}
+#head1{
+    font-size: 30px;
+    letter-spacing: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.labels{
+    background-color: white;
+    color: violet;
+    width: 110px;
+    border:1px black solid;
+    border-radius: 20px;
+}
+#capture1,#check1{
+    background-color: chocolate;
+    border-radius: 10px;
+    color: darkblue;
+}
+#webcam1{
+    border:black 2px solid
+}

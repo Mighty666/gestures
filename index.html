@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Predict the Hand Gestures</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+    <body>
+        <center>
+        <button class="btn btn-danger" id="head1">Predict the Hand Gestures! <br>&#128077; &#9995; &#9996; &#128070; &#129304;
+        </button>
+        <p style="color: white; font-size: 20px;">Take your selfie for the AI to predict what your hands are doing.</p>
+        <h3 style="color: yellow;"><strong>Are you holding the Peace Sign?</strong></h3>
+        <h3 style="color: blue;"><strong>Are you trying to High Five?</strong></h3>
+        <h3 style="color: red;"><strong>Are you holding a Thumbs Up?</strong></h3>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <p class="labels">Webcam View -</p>
+            <div id="webcam1">
+            </div><br>
+            <button id="capture1" onclick="captureimg()">Capture Image</button>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <p class="labels">Prediction 1</p>
+            <h3 id="pre1"></h3>
+            <h3 id="emo1"></h3>
+            <p class="labels">Prediction 2</p>
+            <h3 id="pre2"></h3>
+            <h3 id="emo2"></h3>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <p class="labels">Snapshot</p>
+            <div id="webcam2"></div><br>
+            <button id="check1" onclick="check()">Predict Emotion</button>
+        </div>
+        </center>
+    </body>
+<script src="main.js"></script>
+</html>
